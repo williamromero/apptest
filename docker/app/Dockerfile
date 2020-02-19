@@ -39,7 +39,8 @@ COPY Gemfile Gemfile
 COPY Gemfile.lock Gemfile.lock
 
 COPY . .
-RUN bundle exec rake assets:precompile
+# RUN bundle exec rake assets:precompile
+RUN SECRET_KEY_BASE=1 RAILS_ENV=production bin/rails assets:precompile
 
 EXPOSE 3000
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
