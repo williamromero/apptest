@@ -17,11 +17,15 @@ RUN apk update && \
     mysql \
     mysql-client \
     mysql-dev  \
-    imagemagick
+    imagemagick \
+    libffi-dev \
+    nano \
+    ls
 RUN gem install bundler:2.1.4
 RUN apk add --no-cache build-base
 # RUN apk add libmysqlclient-dev
 RUN gem install mysql2
+RUN gem install ffi
 RUN gem install nokogiri
 RUN bundle install
 
