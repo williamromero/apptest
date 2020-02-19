@@ -1,0 +1,11 @@
+production:
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  encoding: utf8
+  port: 3306
+  username: root
+  password: 1234
+  host: db
+  database: apptest
+  socket: /tmp/mysql.sock
