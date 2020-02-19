@@ -17,10 +17,7 @@ RUN apk update && \
     mysql \
     mysql-client \
     mysql-dev  \
-    imagemagick \
-    libffi-dev \
-    nano \
-    ls
+    imagemagick
 RUN gem install bundler:2.1.4
 RUN apk add --no-cache build-base
 # RUN apk add libmysqlclient-dev
