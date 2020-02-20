@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: docker/app/Dockerfile
+    command: bundle exec puma -p 3000 -e production
     depends_on:
       - db
     volumes:

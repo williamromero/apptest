@@ -44,4 +44,5 @@ COPY . .
 RUN SECRET_KEY_BASE=1 RAILS_ENV=production bin/rails assets:precompile
 
 EXPOSE 3000
-CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+# CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
+# RUN bundle exec puma -p 3000 -e production
