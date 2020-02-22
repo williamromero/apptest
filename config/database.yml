@@ -1,3 +1,11 @@
+# development:
+#   adapter: mysql2
+#   encoding: utf8
+#   pool: 5
+#   username: root
+#   password: 1234
+#   database: petrastudio
+#   socket: /tmp/mysql.sock
 production:
   adapter: mysql2
   pool: 5
